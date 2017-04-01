@@ -1,0 +1,30 @@
+{
+  "name": "liri",
+  "version": "0.0.5",
+  "description": "A class demo of node usage",
+  "main": "liri.js",
+  "dependencies": {
+    "request": "^2.81.0",
+    "twitter": "^1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VolkRiot/liri-node-app.git"
+  },
+  "keywords": [
+    "node",
+    "siri",
+    "command",
+    "line"
+  ],
+  "author": "mishkatronic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VolkRiot/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/VolkRiot/liri-node-app#readme"
+}
