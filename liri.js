@@ -1,3 +1,7 @@
-require('./keys.js'); // Twitter keys
+var twitterKeys = require('./keys.js').twitterKeys; // Twitter keys
+var request = require('request');
+var twitter = require('twitter');
 
-console.log(twitterKeys);
+var commArgs = process.argv.slice(2);
+
+
