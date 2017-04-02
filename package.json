@@ -1,9 +1,10 @@
 {
-  "name": "liri",
-  "version": "0.0.5",
-  "description": "A class demo of node usage",
+  "name": "liri-not-siri",
+  "version": "1.0.1",
+  "description": "This is a command line tool for querying various API's to show node functionality",
   "main": "liri.js",
   "dependencies": {
+    "inquirer": "^3.0.6",
     "request": "^2.81.0",
     "twitter": "^1.7.0"
   },
@@ -16,10 +17,8 @@
     "url": "git+https://github.com/VolkRiot/liri-node-app.git"
   },
   "keywords": [
-    "node",
     "siri",
-    "command",
-    "line"
+    "command-line"
   ],
   "author": "mishkatronic",
   "license": "ISC",
