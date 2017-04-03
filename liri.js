@@ -8,7 +8,6 @@ function LiriInterface(twitterKeys){
 }
 
 LiriInterface.prototype.initDependencies = function(){
-
   var TwitterBuild = require('twitter');
 
   this.Twitter = new TwitterBuild(this.twitKeys);
@@ -16,7 +15,9 @@ LiriInterface.prototype.initDependencies = function(){
   this.Inquire = require('inquirer');
   this.fileIO = require('fs');
   this.Spotify = require('spotify');
-  this.chalk = require('chalk');
+
+  // Clear Console
+  console.log('\x1Bc');
 
 };
 
@@ -85,7 +86,7 @@ LiriInterface.prototype.getTweets = function (user, total) {
     if (!error) {
       
       tweets.forEach(function (tweet, index) {
-        console.log('Tweet # ' + parseInt(index+ 1) + ': ' + tweet.text);
+        console.log('Tweet# ' + parseInt(index+ 1) + ': ' + tweet.text);
       });
     }
   });
