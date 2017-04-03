@@ -16,6 +16,7 @@ LiriInterface.prototype.initDependencies = function(){
   this.Inquire = require('inquirer');
   this.fileIO = require('fs');
   this.Spotify = require('spotify');
+  this.chalk = require('chalk');
 
 };
 
@@ -23,20 +24,29 @@ LiriInterface.prototype.initDependencies = function(){
 LiriInterface.prototype.promptUserChoice = function () {
 
   var self = this;
-  //this.user = prompt("Hello new friend, what should I call you?", "Mysterious Stranger");
 
   this.Inquire.prompt([
     {
-      type: "list",
-      message: "Hi! " + this.user + " , please select from the following options.",
-      name: 'command',
-      choices: this.commandArray
+      type: 'input',
+      message: "Hello, what should I call you?",
+      name: 'userName',
+      default: 'Mysterious Stranger'
     }
-  ]).then(function(userInputs) {
+  ]).then(function (person) {
+    self.Inquire.prompt([
+      {
+        type: "list",
+        message: "Hi! " + person.userName + ", please select from the following options.",
+        name: 'command',
+        choices: self.commandArray
+      }
+    ]).then(function (userInputs) {
 
-    self.userInputs = userInputs;
-    console.log(self.userInputs.command);
-    self.delegate(self.userInputs.command);
+      self.userInputs = userInputs;
+      console.log(self.userInputs.command);
+      self.delegate(self.userInputs.command);
+
+    });
 
   });
 
@@ -50,7 +60,7 @@ LiriInterface.prototype.delegate = function (selection) {
 
     case 'my-tweets':
 
-      this.getTweets();
+      this.getTweets('mishkatronic', 20);
 
       break;
 
@@ -64,12 +74,19 @@ LiriInterface.prototype.delegate = function (selection) {
 
 };
 
-LiriInterface.prototype.getTweets = function () {
+LiriInterface.prototype.getTweets = function (user, total) {
 
-  this.Twitter.get('statuses/user_timeline', 'mishkatronic', function(error, tweets, response) {
+  var params = {
+    username: user,
+    count: total
+  };
+
+  this.Twitter.get('statuses/user_timeline', params, function(error, tweets, response) {
     if (!error) {
-      console.log(tweets);
-      //console.log(response);
+      
+      tweets.forEach(function (tweet, index) {
+        console.log('Tweet # ' + parseInt(index+ 1) + ': ' + tweet.text);
+      });
     }
   });
 
