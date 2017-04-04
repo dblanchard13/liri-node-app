@@ -135,7 +135,7 @@ LiriInterface.prototype.getSong = function (songChoice) {
 
   this.Spotify.search({type: 'track', query: songChoice}, function (err, data) {
     if (err) {
-      console.log('Error occurred: ' + err);
+      console.log('Error were declared: ' + err);
       return;
     }
 
