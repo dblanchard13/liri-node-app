@@ -55,6 +55,20 @@ LiriInterface.prototype.promptUserChoice = function () {
   }.bind(this));
 };
 
+LiriInterface.prototype.buildPromptCallback = function (message, defaultVal, callback) {
+
+  this.Inquire.prompt({
+    type: 'input',
+    message: message,
+    name: 'answer',
+    default: defaultVal
+
+  }).then(function (response) {
+    callback(response.answer, 20);
+  });
+
+};
+
 
 LiriInterface.prototype.delegate = function (selection) {
 
@@ -65,31 +79,21 @@ LiriInterface.prototype.delegate = function (selection) {
     case 'my-tweets':
 
       this.clearCmdIntf();
-      this.Inquire.prompt({
-        type: 'input',
-        message: 'What screen name should I look for?',
-        name: 'user_name',
-        default: 'ConanOBrien'
-
-      }).then(function (response) {
-        this.getTweets(response.user_name, 20);
-      }.bind(this));
+      this.buildPromptCallback('What screen name should I look for?', 'ConanOBrien', this.getTweets.bind(this));
 
       break;
 
     case 'spotify-this-song':
 
-      this.Inquire.prompt({
-        type: 'input',
-        message: 'What song would you like to search for?',
-        name: 'song'
-      }).then(function (input) {
-        this.getSong(input.song);
-      }.bind(this));
+      this.clearCmdIntf();
+      this.buildPromptCallback('What song would you like to search for?', 'Killing in the Name', this.getSong.bind(this));
 
       break;
 
     case 'movie-this':
+
+      this.clearCmdIntf();
+      this.buildPromptCallback('What movie would you like to look up?', 'The Matrix',  this.getMovie.bind(this));
 
       break;
 
@@ -112,7 +116,6 @@ LiriInterface.prototype.getTweets = function (user, total) {
     screen_name: user,
     count: total
   };
-
 
   this.Twitter.get('statuses/user_timeline', params, function(error, tweets, response) {
     if (!error) {
@@ -142,7 +145,14 @@ LiriInterface.prototype.getSong = function (songChoice) {
   });
 };
 
+LiriInterface.prototype.getMovie = function(){
+
+
+
+};
+
 
 // End of object prototypes
+// Start run Logic
 
-var Liri = new LiriInterface(require('./keys.js').twitterKeys);
+new LiriInterface(require('./keys.js').twitterKeys);
