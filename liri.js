@@ -39,32 +39,19 @@ LiriInterface.prototype.queryUserInfo = function () {
 
 
 LiriInterface.prototype.promptUserChoice = function () {
-  this.Inquire.prompt([
-    {
-      type: "list",
-      message: "Hi! " + this.userName + ", please select from the following options.",
-      name: 'command',
-      choices: this.commandArray
-    }
-  ]).then(function (userInputs) {
 
-    this.userInputs = userInputs;
-    console.log(this.userInputs.command);
-    this.delegate(this.userInputs.command);
-
-  }.bind(this));
+  this.buildPromptCallback({
+    type: "list",
+    message: "Hi! " + this.userName + ", please select from the following options.",
+    name: 'answer',
+    choices: this.commandArray
+  }, this.delegate.bind(this));
 };
 
-LiriInterface.prototype.buildPromptCallback = function (message, defaultVal, callback) {
+LiriInterface.prototype.buildPromptCallback = function (promptObj, callback) {
 
-  this.Inquire.prompt({
-    type: 'input',
-    message: message,
-    name: 'answer',
-    default: defaultVal
-
-  }).then(function (response) {
-    callback(response.answer, 20);
+  this.Inquire.prompt(promptObj).then(function (response) {
+    callback(response.answer);
   });
 
 };
@@ -79,22 +66,34 @@ LiriInterface.prototype.delegate = function (selection) {
     case 'my-tweets':
 
       this.clearCmdIntf();
-      this.buildPromptCallback('What screen name should I look for?', 'ConanOBrien', this.getTweets.bind(this));
-
+      this.buildPromptCallback({
+        type: 'input',
+        message: 'What screen name should I look for?',
+        name: 'answer',
+        default: 'ConanOBrien'
+      }, this.getTweets.bind(this));
       break;
 
     case 'spotify-this-song':
 
       this.clearCmdIntf();
-      this.buildPromptCallback('What song would you like to search for?', 'Killing in the Name', this.getSong.bind(this));
-
+      this.buildPromptCallback({
+        type: 'input',
+        message: 'What song would you like to search for?',
+        name: 'answer',
+        default: 'Killing in the Name'
+      }, this.getSong.bind(this));
       break;
 
     case 'movie-this':
 
       this.clearCmdIntf();
-      this.buildPromptCallback('What movie would you like to look up?', 'The Matrix',  this.getMovie.bind(this));
-
+      this.buildPromptCallback({
+        type: 'input',
+        message: 'What movie would you like to look up?',
+        name: 'answer',
+        default: 'The Matrix'
+      }, this.getMovie.bind(this));
       break;
 
     case 'do-what-it-says':
@@ -110,11 +109,11 @@ LiriInterface.prototype.delegate = function (selection) {
 
 };
 
-LiriInterface.prototype.getTweets = function (user, total) {
+LiriInterface.prototype.getTweets = function (user) {
 
   var params = {
     screen_name: user,
-    count: total
+    count: 20
   };
 
   this.Twitter.get('statuses/user_timeline', params, function(error, tweets, response) {
