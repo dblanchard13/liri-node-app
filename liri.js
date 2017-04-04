@@ -24,8 +24,6 @@ LiriInterface.prototype.initDependencies = function(){
 
 LiriInterface.prototype.promptUserChoice = function () {
 
-  var self = this;
-
   this.Inquire.prompt([
     {
       type: 'input',
@@ -34,22 +32,22 @@ LiriInterface.prototype.promptUserChoice = function () {
       default: 'Mysterious Stranger'
     }
   ]).then(function (person) {
-    self.Inquire.prompt([
+    this.Inquire.prompt([
       {
         type: "list",
         message: "Hi! " + person.userName + ", please select from the following options.",
         name: 'command',
-        choices: self.commandArray
+        choices: this.commandArray
       }
     ]).then(function (userInputs) {
 
-      self.userInputs = userInputs;
-      console.log(self.userInputs.command);
-      self.delegate(self.userInputs.command);
+      this.userInputs = userInputs;
+      console.log(this.userInputs.command);
+      this.delegate(this.userInputs.command);
 
-    });
+    }.bind(this));
 
-  });
+  }.bind(this));
 
 };
 
@@ -70,6 +68,8 @@ LiriInterface.prototype.delegate = function (selection) {
       break;
 
     case 'movie-this':
+
+      break;
 
   }
 
