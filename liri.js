@@ -41,7 +41,7 @@ LiriInterface.prototype.promptUserChoice = function (userName) {
 
   this.buildPromptCallback({
     type: "list",
-    message: "Hi! " + this.userName + ", please select from the following options.",
+    message: "Hi, " + this.userName + ", please select from the following options.",
     name: 'answer',
     choices: this.commandArray
   }, this.delegate.bind(this));
@@ -134,6 +134,8 @@ LiriInterface.prototype.getTweets = function (user) {
       console.log("Error were declared: " + err);
     }
 
+    console.log('\n');
+
     this.promptUserChoice();
 
   }.bind(this));
@@ -163,12 +165,34 @@ LiriInterface.prototype.getMovie = function(movie){
 
   this.Requester('http://www.omdbapi.com/?t=' + movie, function (err, response, body){
     if(!err){
-      // Build this better
-      console.log(body)
+
+      var movie = JSON.parse(body);
+
+      var string = movie.Title + "\nYear: " + movie.Year + "\nIMDb Rating: " + movie.Ratings[0].Value +
+          "\nCountry: " + movie.Country + "\nLanguage: " + movie.Language + "\n\nPlot\n" +
+          movie.Plot + "\n\nActors\n" + movie.Actors + "\nWebsite Link: " + movie.Website;
+
+      if(movie.Ratings.length > 1) {
+
+        movie.Ratings.forEach(function (item) {
+          if(item.Source == "Rotten Tomatoes"){
+            string += "\nRotten Tomatoes Rating: " + item.Value;
+          }
+        });
+
+      }else{
+        string += "\nNo Rotten Tomatoes Ratings Available"
+      }
+
+      console.log(string + '\n');
+
     }else{
       console.log('Error were declared: ' + err);
     }
-  });
+
+    this.promptUserChoice();
+
+  }.bind(this));
 
 };
 
