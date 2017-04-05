@@ -102,7 +102,16 @@ LiriInterface.prototype.delegate = function (selection) {
     case 'exit':
 
       this.clearCmdIntf();
-      console.log("Bye! Have a great time!")
+      console.log("Bye! Have a great time!");
+
+      break;
+
+    default:
+
+      console.log("How did you even manage to get here?" +
+          "\nWell then you deserve something for your accomplishment..." +
+              "\nHere is an emoticon of a butt - NSFW(of course):\n(‿ˠ‿)"
+      );
 
   }
 
