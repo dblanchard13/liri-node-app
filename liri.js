@@ -24,21 +24,20 @@ LiriInterface.prototype.clearCmdIntf = function () {
 };
 
 LiriInterface.prototype.queryUserInfo = function () {
-  this.Inquire.prompt([
-    {
-      type: 'input',
-      message: "Hello, what should I call you?",
-      name: 'userName',
-      default: 'Mysterious Stranger'
-    }
-  ]).then(function (user) {
-    this.userName = user.userName;
-    this.promptUserChoice();
-  }.bind(this))
+
+  this.buildPromptCallback({
+    type: 'input',
+    message: "Hello, what should I call you?",
+    name: 'answer',
+    default: 'Mysterious Stranger'
+  }, this.promptUserChoice.bind(this));
+
 };
 
 
-LiriInterface.prototype.promptUserChoice = function () {
+LiriInterface.prototype.promptUserChoice = function (userName) {
+
+  if(userName) this.userName = userName;
 
   this.buildPromptCallback({
     type: "list",
