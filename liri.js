@@ -102,7 +102,7 @@ LiriInterface.prototype.delegate = function (selection) {
     case 'exit':
 
       this.clearCmdIntf();
-      console.log("Bye! Have a good day.")
+      console.log("Bye! Have a great time!")
 
   }
 
@@ -115,13 +115,13 @@ LiriInterface.prototype.getTweets = function (user) {
     count: 20
   };
 
-  this.Twitter.get('statuses/user_timeline', params, function(error, tweets, response) {
-    if (!error) {
+  this.Twitter.get('statuses/user_timeline', params, function(err, tweets, response) {
+    if (!err) {
       tweets.forEach(function (tweet, index) {
         console.log('Tweet# ' + parseInt(index + 1) + ': ' + tweet.text);
       });
     }else{
-      console.log("Sorry but an error occured.")
+      console.log("Error were declared: " + err);
     }
 
     this.promptUserChoice();
@@ -133,12 +133,17 @@ LiriInterface.prototype.getTweets = function (user) {
 LiriInterface.prototype.getSong = function (songChoice) {
 
   this.Spotify.search({type: 'track', query: songChoice}, function (err, data) {
-    if (err) {
+    if (!err) {
+
+      var song = data.tracks.items[0];
+      var string = "Artist: " + song.artists[0].name + "\nName: " + song.name + "\nPreview: " +
+          song.preview_url + "\nAlbum: " + song.album.name;
+
+      console.log(string);
+    }else{
       console.log('Error were declared: ' + err);
-      return;
     }
 
-    console.log(data.tracks.items[0]);
 
   });
 };
