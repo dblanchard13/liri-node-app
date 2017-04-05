@@ -144,8 +144,9 @@ LiriInterface.prototype.getSong = function (songChoice) {
       console.log('Error were declared: ' + err);
     }
 
+    this.promptUserChoice();
 
-  });
+  }.bind(this));
 };
 
 LiriInterface.prototype.getMovie = function(){
