@@ -109,8 +109,9 @@ LiriInterface.prototype.delegate = function (selection) {
     default:
 
       console.log("How did you even manage to get here?" +
+          "\nIt should not be possible... I am impressed" +
           "\nWell then you deserve something for your accomplishment..." +
-              "\nHere is an emoticon of a butt - NSFW(of course):\n(‿ˠ‿)"
+              "\nHere is an NSFW emoticon for you to enjoy:\n(‿ˠ‿)"
       );
 
   }
@@ -158,9 +159,16 @@ LiriInterface.prototype.getSong = function (songChoice) {
   }.bind(this));
 };
 
-LiriInterface.prototype.getMovie = function(){
+LiriInterface.prototype.getMovie = function(movie){
 
-
+  this.Requester('http://www.omdbapi.com/?t=' + movie, function (err, response, body){
+    if(!err){
+      // Build this better
+      console.log(body)
+    }else{
+      console.log('Error were declared: ' + err);
+    }
+  });
 
 };
 
