@@ -56,7 +56,7 @@ LiriInterface.prototype.buildPromptCallback = function (promptObj, callback) {
 };
 
 
-LiriInterface.prototype.delegate = function (selection) {
+LiriInterface.prototype.delegate = function (selection, value) {
 
   this.currentCommand = selection;
 
@@ -65,6 +65,12 @@ LiriInterface.prototype.delegate = function (selection) {
     case 'my-tweets':
 
       this.clearCmdIntf();
+
+      if(value) {
+        this.getTweets(value);
+        break;
+      }
+
       this.buildPromptCallback({
         type: 'input',
         message: 'What screen name should I look for?',
@@ -76,6 +82,12 @@ LiriInterface.prototype.delegate = function (selection) {
     case 'spotify-this-song':
 
       this.clearCmdIntf();
+
+      if(value) {
+        this.getSong(value);
+        break;
+      }
+
       this.buildPromptCallback({
         type: 'input',
         message: 'What song would you like to search for?',
@@ -87,6 +99,12 @@ LiriInterface.prototype.delegate = function (selection) {
     case 'movie-this':
 
       this.clearCmdIntf();
+
+      if(value) {
+        this.getMovie(value);
+        break;
+      }
+
       this.buildPromptCallback({
         type: 'input',
         message: 'What movie would you like to look up?',
@@ -96,7 +114,8 @@ LiriInterface.prototype.delegate = function (selection) {
       break;
 
     case 'do-what-it-says':
-
+      this.clearCmdIntf();
+      this.readInRun();
       break;
 
     case 'exit':
@@ -191,6 +210,25 @@ LiriInterface.prototype.getMovie = function(movie){
     }
 
     this.promptUserChoice();
+
+  }.bind(this));
+
+};
+
+LiriInterface.prototype.readInRun = function(){
+
+  this.fileIO.readFile("random.txt", "utf8", function(err, data){
+
+    if(!err){
+      var array = data.split(',');
+
+      //TODO: Change this to read in all possible commands in sets of two?
+
+      this.delegate(array[0], array[1]);
+
+    }else{
+      console.log("Looks like the readFile failed");
+    }
 
   }.bind(this));
 
