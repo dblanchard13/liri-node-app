@@ -1,0 +1,49 @@
+my-tweets,ConanOBrien
+Tweet# 1: I was thrilled to interview/be insulted non-stop by the legendary Don Rickles. I will sorely miss this incredibly funny and lovable man.
+Tweet# 2: I may not be the strongest person at the gym, but I defy you to find someone in this Curves with a better attitude.
+Tweet# 3: What has more failed launches? Trump businesses, or North Korea?
+Tweet# 4: I’m not worried about the stock market, because all my wealth is in individually wrapped bologna slices.
+Tweet# 5: Okay let me put an internet rumor to bed. NO, this isn't me. https://t.co/4LIbzDV4XY
+Tweet# 6: Whenever I think milk might have gone bad, I ask Sean Spicer to smell it. If he says it smells fine, I know to throw it out.
+Tweet# 7: We live in a representative democracy where elected officials are accountable to the people. APRIL FOOLS!
+Tweet# 8: I’m not positive, but I’m pretty sure one of this year’s Final Four-- N. Carolina, S. Carolina, Oregon, or Gonzaga --isn’t a state.
+Tweet# 9: It would not surprise me at all if someone had footage of Devin Nunes with his head stuck inside a beehive.
+Tweet# 10: This is the ideal time in the season to either plant tomatoes or enter into a land war with Russia, I forget which.
+Tweet# 11: Congress voted to allow your internet provider to sell your browser history. Long story short, goodbye sweet internet.
+Tweet# 12: I was also once thrown off a United Airlines flight for wearing these https://t.co/qgyCovqEHI
+Tweet# 13: One of Uber’s self-driving cars crashed in Arizona. Evidently, the car couldn’t stand to hear one more passenger say, “But it’s a dry heat.”
+Tweet# 14: Most of the water cooler talk at my office is millennials standing around the water cooler, saying what is this thing?
+Tweet# 15: If you say the word “lozenge” 50 times out loud, it starts sounding really weird. Also, your family leaves the dining table.
+Tweet# 16: If I could only pick one desert island record, I’d choose whichever album is most canoe-shaped.
+Tweet# 17: Giraffes are gentle creatures who do not kill, except when asked one too many times, "How's the weather up there?"
+Tweet# 18: The key to looking young is getting the "right work" done. Just a subtle tweak now and then. Do you like my new hawk wings?
+Tweet# 19: Me: Siri, did The Beatles ever use female backup singers in their songs?
+Siri: You have a lot of free time for a, quote, busy guy.
+Tweet# 20: Bracket already busted. I had “Woody Harrelson From White Men Can’t Jump” going all the way.
+
+spotify-this-song,Killing in the Name
+Artist: Rage Against The Machine
+Name: Killing In The Name - Remastered
+Preview: https://p.scdn.co/mp3-preview/af0c42e6dacc0b8bb43c269ea2075c3de3ee2c7a?cid=null
+Album: Rage Against The Machine - XX (20th Anniversary Special Edition)
+movie-this,The Matrix
+The Matrix
+Year: 1999
+IMDb Rating: 8.7/10
+Country: USA
+Language: English
+
+Plot
+A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
+
+Actors
+Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+Website Link: http://www.whatisthematrix.com
+Rotten Tomatoes Rating: 87%
+
+spotify-this-song,"I Want it That Way"
+
+Artist: Backstreet Boys
+Name: I Want It That Way
+Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=null
+Album: The Hits--Chapter One

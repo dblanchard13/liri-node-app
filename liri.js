@@ -50,8 +50,9 @@ LiriInterface.prototype.promptUserChoice = function (userName) {
 LiriInterface.prototype.buildPromptCallback = function (promptObj, callback) {
 
   this.Inquire.prompt(promptObj).then(function (response) {
-    callback(response.answer);
-  });
+    this.inputVal = response.answer;
+    callback(this.inputVal);
+  }.bind(this));
 
 };
 
@@ -59,6 +60,7 @@ LiriInterface.prototype.buildPromptCallback = function (promptObj, callback) {
 LiriInterface.prototype.delegate = function (selection, value) {
 
   this.currentCommand = selection;
+  if (value) this.inputVal = value;
 
   switch (this.currentCommand){
 
@@ -146,9 +148,13 @@ LiriInterface.prototype.getTweets = function (user) {
 
   this.Twitter.get('statuses/user_timeline', params, function(err, tweets, response) {
     if (!err) {
+      var string = '';
       tweets.forEach(function (tweet, index) {
-        console.log('Tweet# ' + parseInt(index + 1) + ': ' + tweet.text);
+        var tweetString = 'Tweet# ' + parseInt(index + 1) + ': ' + tweet.text + '\n';
+        console.log(tweetString);
+        string += tweetString;
       });
+      this.output = string;
     }else{
       console.log("Error were declared: " + err);
     }
@@ -156,6 +162,7 @@ LiriInterface.prototype.getTweets = function (user) {
     console.log('\n');
 
     this.promptUserChoice();
+    this.writeToFile();
 
   }.bind(this));
 
@@ -170,11 +177,13 @@ LiriInterface.prototype.getSong = function (songChoice) {
       var string = "Artist: " + song.artists[0].name + "\nName: " + song.name + "\nPreview: " +
           song.preview_url + "\nAlbum: " + song.album.name;
 
-      console.log(string);
+      this.output = string;
+      console.log(this.output);
     }else{
       console.log('Error were declared: ' + err);
     }
 
+    this.writeToFile();
     this.promptUserChoice();
 
   }.bind(this));
@@ -203,12 +212,14 @@ LiriInterface.prototype.getMovie = function(movie){
         string += "\nNo Rotten Tomatoes Ratings Available"
       }
 
-      console.log(string + '\n');
+      this.output = string + '\n';
+      console.log(this.output);
 
     }else{
       console.log('Error were declared: ' + err);
     }
 
+    this.writeToFile();
     this.promptUserChoice();
 
   }.bind(this));
@@ -234,8 +245,23 @@ LiriInterface.prototype.readInRun = function(){
 
 };
 
+LiriInterface.prototype.writeToFile = function () {
 
-// End of object prototypes
+  var array = [];
+  array.push(this.currentCommand);
+  array.push(this.inputVal);
+
+  var commOutputString = array + '\n' + this.output + '\n';
+  console.log(commOutputString);
+
+  this.fileIO.appendFile("log.txt", commOutputString, function (err) {
+    if(err){
+      console.log('Error were declared.')
+    }
+  })
+
+};
+
+
 // Start run Logic
-
 new LiriInterface(require('./keys.js').twitterKeys);
