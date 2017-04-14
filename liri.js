@@ -150,7 +150,7 @@ LiriInterface.prototype.getTweets = function (user) {
     if (!err) {
       var string = '';
       tweets.forEach(function (tweet, index) {
-        var tweetString = 'Tweet# ' + parseInt(index + 1) + ': ' + tweet.text + '\n';
+        var tweetString = tweet.created_at + ' ' + parseInt(index + 1) + ': ' + tweet.text + '\n';
         console.log(tweetString);
         string += tweetString;
       });

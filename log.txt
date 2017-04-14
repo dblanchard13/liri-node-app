@@ -47,3 +47,106 @@ Artist: Backstreet Boys
 Name: I Want It That Way
 Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=null
 Album: The Hits--Chapter One
+my-tweets,ConanOBrien
+Tweet# 1: Just think, pretty soon we'll have self-driving cars to masturbate in.
+Tweet# 2: I was thrilled to interview/be insulted non-stop by the legendary Don Rickles. I will sorely miss this incredibly funny and lovable man.
+Tweet# 3: I may not be the strongest person at the gym, but I defy you to find someone in this Curves with a better attitude.
+Tweet# 4: What has more failed launches? Trump businesses, or North Korea?
+Tweet# 5: I’m not worried about the stock market, because all my wealth is in individually wrapped bologna slices.
+Tweet# 6: Okay let me put an internet rumor to bed. NO, this isn't me. https://t.co/4LIbzDV4XY
+Tweet# 7: Whenever I think milk might have gone bad, I ask Sean Spicer to smell it. If he says it smells fine, I know to throw it out.
+Tweet# 8: We live in a representative democracy where elected officials are accountable to the people. APRIL FOOLS!
+Tweet# 9: I’m not positive, but I’m pretty sure one of this year’s Final Four-- N. Carolina, S. Carolina, Oregon, or Gonzaga --isn’t a state.
+Tweet# 10: It would not surprise me at all if someone had footage of Devin Nunes with his head stuck inside a beehive.
+Tweet# 11: This is the ideal time in the season to either plant tomatoes or enter into a land war with Russia, I forget which.
+Tweet# 12: Congress voted to allow your internet provider to sell your browser history. Long story short, goodbye sweet internet.
+Tweet# 13: I was also once thrown off a United Airlines flight for wearing these https://t.co/qgyCovqEHI
+Tweet# 14: One of Uber’s self-driving cars crashed in Arizona. Evidently, the car couldn’t stand to hear one more passenger say, “But it’s a dry heat.”
+Tweet# 15: Most of the water cooler talk at my office is millennials standing around the water cooler, saying what is this thing?
+Tweet# 16: If you say the word “lozenge” 50 times out loud, it starts sounding really weird. Also, your family leaves the dining table.
+Tweet# 17: If I could only pick one desert island record, I’d choose whichever album is most canoe-shaped.
+Tweet# 18: Giraffes are gentle creatures who do not kill, except when asked one too many times, "How's the weather up there?"
+Tweet# 19: The key to looking young is getting the "right work" done. Just a subtle tweak now and then. Do you like my new hawk wings?
+Tweet# 20: Me: Siri, did The Beatles ever use female backup singers in their songs?
+Siri: You have a lot of free time for a, quote, busy guy.
+
+spotify-this-song,Killing in the Name
+Artist: Rage Against The Machine
+Name: Killing In The Name - Remastered
+Preview: https://p.scdn.co/mp3-preview/af0c42e6dacc0b8bb43c269ea2075c3de3ee2c7a?cid=null
+Album: Rage Against The Machine - XX (20th Anniversary Special Edition)
+movie-this,The Matrix
+The Matrix
+Year: 1999
+IMDb Rating: 8.7/10
+Country: USA
+Language: English
+
+Plot
+A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.
+
+Actors
+Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+Website Link: http://www.whatisthematrix.com
+Rotten Tomatoes Rating: 87%
+
+spotify-this-song,"I Want it That Way"
+
+Artist: Backstreet Boys
+Name: I Want It That Way
+Preview: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=null
+Album: The Hits--Chapter One
+spotify-this-song,Killing in the Name
+Artist: Rage Against The Machine
+Name: Killing In The Name - Remastered
+Preview: https://p.scdn.co/mp3-preview/af0c42e6dacc0b8bb43c269ea2075c3de3ee2c7a?cid=null
+Album: Rage Against The Machine - XX (20th Anniversary Special Edition)
+spotify-this-song,Killing in the Name
+Artist: Rage Against The Machine
+Name: Killing In The Name - Remastered
+Preview: https://p.scdn.co/mp3-preview/af0c42e6dacc0b8bb43c269ea2075c3de3ee2c7a?cid=null
+Album: Rage Against The Machine - XX (20th Anniversary Special Edition)
+my-tweets,ConanOBrien
+Fri Apr 14 17:45:10 +0000 2017 1: I wish President Trump would stop calling “Good Friday” “Tremendous Friday, the Greatest Friday you’ve ever seen.”
+Thu Apr 13 16:57:14 +0000 2017 2: The most exciting part of Easter egg hunts at my house is when suddenly the hunted become the hunters.
+Wed Apr 12 17:15:26 +0000 2017 3: MOVIE IDEA: Equels. It's the movie you're watching.
+Tue Apr 11 19:35:15 +0000 2017 4: Does it make me seem more badass if I drink this Sleepytime Herbal Tea out of a human skull?
+Mon Apr 10 18:50:19 +0000 2017 5: “Tinder is the Night” #UpdateAFitzgeraldNovel #HashtagsWithOnlyOneResponse
+Sun Apr 09 20:01:10 +0000 2017 6: Sometimes I think the bulk packages at Costco are too large. Who needs 12 condoms?!
+Sat Apr 08 17:30:34 +0000 2017 7: In Indiana, a 94-year-old woman has worked at McDonald’s for the past 44 years. And she’s almost finished paying off her student loans.
+Fri Apr 07 19:25:12 +0000 2017 8: Just think, pretty soon we'll have self-driving cars to masturbate in.
+Thu Apr 06 21:20:03 +0000 2017 9: I was thrilled to interview/be insulted non-stop by the legendary Don Rickles. I will sorely miss this incredibly funny and lovable man.
+Thu Apr 06 17:15:27 +0000 2017 10: I may not be the strongest person at the gym, but I defy you to find someone in this Curves with a better attitude.
+Wed Apr 05 18:55:14 +0000 2017 11: What has more failed launches? Trump businesses, or North Korea?
+Tue Apr 04 21:50:15 +0000 2017 12: I’m not worried about the stock market, because all my wealth is in individually wrapped bologna slices.
+Mon Apr 03 16:22:39 +0000 2017 13: Okay let me put an internet rumor to bed. NO, this isn't me. https://t.co/4LIbzDV4XY
+Sun Apr 02 19:15:22 +0000 2017 14: Whenever I think milk might have gone bad, I ask Sean Spicer to smell it. If he says it smells fine, I know to throw it out.
+Sat Apr 01 16:35:11 +0000 2017 15: We live in a representative democracy where elected officials are accountable to the people. APRIL FOOLS!
+Fri Mar 31 23:05:09 +0000 2017 16: I’m not positive, but I’m pretty sure one of this year’s Final Four-- N. Carolina, S. Carolina, Oregon, or Gonzaga --isn’t a state.
+Fri Mar 31 17:03:24 +0000 2017 17: It would not surprise me at all if someone had footage of Devin Nunes with his head stuck inside a beehive.
+Thu Mar 30 18:05:16 +0000 2017 18: This is the ideal time in the season to either plant tomatoes or enter into a land war with Russia, I forget which.
+Wed Mar 29 16:58:38 +0000 2017 19: Congress voted to allow your internet provider to sell your browser history. Long story short, goodbye sweet internet.
+Tue Mar 28 20:07:40 +0000 2017 20: I was also once thrown off a United Airlines flight for wearing these https://t.co/qgyCovqEHI
+
+my-tweets,ConanOBrien
+Fri Apr 14 17:45:10 +0000 2017 1: I wish President Trump would stop calling “Good Friday” “Tremendous Friday, the Greatest Friday you’ve ever seen.”
+Thu Apr 13 16:57:14 +0000 2017 2: The most exciting part of Easter egg hunts at my house is when suddenly the hunted become the hunters.
+Wed Apr 12 17:15:26 +0000 2017 3: MOVIE IDEA: Equels. It's the movie you're watching.
+Tue Apr 11 19:35:15 +0000 2017 4: Does it make me seem more badass if I drink this Sleepytime Herbal Tea out of a human skull?
+Mon Apr 10 18:50:19 +0000 2017 5: “Tinder is the Night” #UpdateAFitzgeraldNovel #HashtagsWithOnlyOneResponse
+Sun Apr 09 20:01:10 +0000 2017 6: Sometimes I think the bulk packages at Costco are too large. Who needs 12 condoms?!
+Sat Apr 08 17:30:34 +0000 2017 7: In Indiana, a 94-year-old woman has worked at McDonald’s for the past 44 years. And she’s almost finished paying off her student loans.
+Fri Apr 07 19:25:12 +0000 2017 8: Just think, pretty soon we'll have self-driving cars to masturbate in.
+Thu Apr 06 21:20:03 +0000 2017 9: I was thrilled to interview/be insulted non-stop by the legendary Don Rickles. I will sorely miss this incredibly funny and lovable man.
+Thu Apr 06 17:15:27 +0000 2017 10: I may not be the strongest person at the gym, but I defy you to find someone in this Curves with a better attitude.
+Wed Apr 05 18:55:14 +0000 2017 11: What has more failed launches? Trump businesses, or North Korea?
+Tue Apr 04 21:50:15 +0000 2017 12: I’m not worried about the stock market, because all my wealth is in individually wrapped bologna slices.
+Mon Apr 03 16:22:39 +0000 2017 13: Okay let me put an internet rumor to bed. NO, this isn't me. https://t.co/4LIbzDV4XY
+Sun Apr 02 19:15:22 +0000 2017 14: Whenever I think milk might have gone bad, I ask Sean Spicer to smell it. If he says it smells fine, I know to throw it out.
+Sat Apr 01 16:35:11 +0000 2017 15: We live in a representative democracy where elected officials are accountable to the people. APRIL FOOLS!
+Fri Mar 31 23:05:09 +0000 2017 16: I’m not positive, but I’m pretty sure one of this year’s Final Four-- N. Carolina, S. Carolina, Oregon, or Gonzaga --isn’t a state.
+Fri Mar 31 17:03:24 +0000 2017 17: It would not surprise me at all if someone had footage of Devin Nunes with his head stuck inside a beehive.
+Thu Mar 30 18:05:16 +0000 2017 18: This is the ideal time in the season to either plant tomatoes or enter into a land war with Russia, I forget which.
+Wed Mar 29 16:58:38 +0000 2017 19: Congress voted to allow your internet provider to sell your browser history. Long story short, goodbye sweet internet.
+Tue Mar 28 20:07:40 +0000 2017 20: I was also once thrown off a United Airlines flight for wearing these https://t.co/qgyCovqEHI
+
