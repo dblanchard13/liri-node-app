@@ -2,3 +2,5 @@
 node_modules
 keys.js
 .idea/*
+# You generally wouldn't commit your log files to git
+log.txt

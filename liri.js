@@ -150,13 +150,18 @@ LiriInterface.prototype.getTweets = function (user) {
     if (!err) {
       var string = '';
       tweets.forEach(function (tweet, index) {
-        var tweetString = tweet.created_at + ' ' + parseInt(index + 1) + ': ' + tweet.text + '\n';
+        // parseInt was unnecessary here. Since all you want to do is add the numbers together and display 
+        // that as a part of the string, you can simply put the addition operation in parentheses so
+        // it gets run before the string concatenation occurs.
+        var tweetString = tweet.created_at + ' ' + (index + 1) + ': ' + tweet.text + '\n';
         console.log(tweetString);
         string += tweetString;
       });
       this.output = string;
     }else{
-      console.log("Error were declared: " + err);
+      // by using a comma instead of a + here the error will be a separate argument
+      // and it will be logged as a readable error as opposed to: [object Object]
+      console.log("Error were declared: ", err);
     }
 
     console.log('\n');
@@ -180,7 +185,7 @@ LiriInterface.prototype.getSong = function (songChoice) {
       this.output = string;
       console.log(this.output);
     }else{
-      console.log('Error were declared: ' + err);
+      console.log('Error were declared: ', err);
     }
 
     this.writeToFile();
@@ -216,7 +221,7 @@ LiriInterface.prototype.getMovie = function(movie){
       console.log(this.output);
 
     }else{
-      console.log('Error were declared: ' + err);
+      console.log('Error were declared: ', err);
     }
 
     this.writeToFile();
